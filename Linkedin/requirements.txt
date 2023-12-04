@@ -126,3 +126,4 @@ websocket-client @ file:///C:/ci/websocket-client_1614804473297/work
 widgetsnbextension @ file:///C:/b/abs_derxhz1biv/croot/widgetsnbextension_1701273671518/work
 win-inet-pton @ file:///C:/ci/win_inet_pton_1605306167264/work
 zipp @ file:///C:/b/abs_b9jfdr908q/croot/zipp_1672387552360/work
+scikit-learn==0.24.2
