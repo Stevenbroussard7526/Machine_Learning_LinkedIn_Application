@@ -108,7 +108,7 @@ else:
 
 import pandas 
 
-s=pandas.read_csv("social_media_usage.csv")
+s=pandas.read_csv("Linkedin/social_media_usage.csv")
 
 # <h4>2)Define a function called clean_sm that takes one input, x, and uses `np.where` to check whether x is equal to 1. If it is, make the value of x = 1, otherwise make it 0. Return x. Create a toy dataframe with three rows and two columns and test your function to make sure it works as expected</h4>
 
