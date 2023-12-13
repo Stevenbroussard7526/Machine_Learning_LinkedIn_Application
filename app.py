@@ -8,7 +8,7 @@ import pandas
 ######### Example 1
 st.title("Are You A LinkedIn User? ")
 st.subheader('In a project with the marketing analytics team to analyze social media habits in the US. This is a real-time predictive model based on individual attributes and demographics. This interactive applicatio our marketing team to strategically target platforms and identify key customer segments!', divider='blue')
-educ = st.selectbox("Education level", 
+educ = st.selectbox("What is Your Education Level?", placeholder= "Choose Your Education Level"
               options = ["","less than highschool","High school incomplete","High School Graduate","Some college, no degree","Two year associate degree","Four year college or University","Some postgraduate or professional school"])
 
 if educ == "less than highschool":
@@ -30,7 +30,7 @@ else:
 
 #income
 ####################################
-inc = st.selectbox("Income", 
+inc = st.selectbox("Income Level?", 
               options = ["","Less than $10,000","10 to under $20,000","20 to under $30,000", "30 to under $40,000","40 to under $50,000","50 to under $75,000","75 to under $100,000","100 to under $150,000","$150,000 or more?"])
 
 
