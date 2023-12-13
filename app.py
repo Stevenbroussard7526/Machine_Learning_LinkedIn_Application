@@ -7,6 +7,8 @@ import pandas
 
 ######### Example 1
 st.title("Are You A LinkedIn User? ")
+st.subheader('This is a subheader with a divider', divider='rainbow')
+st.subheader('_Streamlit_ is :blue[cool] :sunglasses:')
 educ = st.selectbox("Education level", 
               options = ["","less than highschool","High school incomplete","High School Graduate","Some college, no degree","Two year associate degree","Four year college or University","Some postgraduate or professional school"])
 
