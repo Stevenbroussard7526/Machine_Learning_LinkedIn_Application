@@ -30,32 +30,32 @@ else:
 
 #income
 ####################################
-inc = st.selectbox("Income Level?", 
+inc = st.selectbox("What is Your Income Level?", 
               options = ["","Less than $10,000","10 to under $20,000","20 to under $30,000", "30 to under $40,000","40 to under $50,000","50 to under $75,000","75 to under $100,000","100 to under $150,000","$150,000 or more?"])
 
 
 if inc == "Less than $10,000":
      inc = 1
-elif inc == "10 to under $20,000":
+elif inc == "$10,000 to under $20,000":
      inc = 2
-elif inc == "20 to under $30,000":
+elif inc == "$20,000 to under $30,000":
      inc = 3
-elif inc == "30 to under $40,000":
+elif inc == "$30,000 to under $40,000":
      inc = 4
-elif inc == "40 to under $50,000":
+elif inc == "$40,000 to under $50,000":
      inc = 5
-elif inc == "50 to under $75,000":
+elif inc == "$50,000 to under $75,000":
      inc = 6
-elif inc == "75 to under $100,000":
+elif inc == "$75,000 to under $100,000":
      inc = 7
-elif inc == "100 to under $150,000":
+elif inc == "$100,000 to under $150,000":
      inc = 8
 else: 
      inc = 9
 #########################################
 
 #Married?
-mar = st.selectbox("Married", 
+mar = st.selectbox("Are You Married?", 
               options = ["","Yes", "No"])
 
 if mar == "Yes":
@@ -66,14 +66,14 @@ else:
 #########################################
 #Age?
 
-age = st.slider(label="Enter age", 
+age = st.slider(label="Enter Your Age", 
            min_value=1,
            max_value=98,
            value=7)
 
  #########################################
 #Degree
-deg = st.selectbox("Degree", 
+deg = st.selectbox("Do You Have A Degree?", 
               options = ["","Yes", "No"])
 
 if deg == "Yes":
@@ -82,7 +82,7 @@ else:
      deg = 0
 #########################################
 #Parent
-par = st.selectbox("Parent", 
+par = st.selectbox("Are You Currently A Parent?", 
               options = ["","Yes", "No"])
 
 if par== "Yes":
@@ -91,7 +91,7 @@ else:
      par = 0
 #########################################
 #Females?
-fem = st.selectbox("Female", 
+fem = st.selectbox("Are You A Female?", 
               options = ["","Yes", "No"])
 
 if fem == "Yes":
@@ -273,7 +273,7 @@ if submit:
 	ans=lr.predict(newdata.iloc[:, :6].values)
 	if ans==[1]:
 		st.write('The probability that you will use Linkedin is:',round(ynew[0,1],2))
-		st.title("Congratulations!!! You are likely a LinkedIn User!")
+		st.title("Congratulations!!! :tada: :tada: :tada: You are likely a LinkedIn User!")
 	else:
 		st.write('The probability that you will use Linkedin is:',round(ynew[0,1],2))
 		st.title("Sorry...You are likely not a Linkedin user...")
