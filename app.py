@@ -265,7 +265,7 @@ newdata = pandas.DataFrame({
 #lr.predict(newdata)
 with st.form("key1"):
     # ask for input
-    submit= st.form_submit_button("Click to find LinkedIn Prediction ")
+    submit= st.form_submit_button("Click to find out if you are LinkedIn user or not! ")
 newdata["prediction"]=lr.predict(newdata.iloc[:, :6].values)
 ynew = lr.predict_proba(newdata.iloc[:, :6].values)
 if submit:
