@@ -8,7 +8,7 @@ import pandas
 ######### Example 1
 st.title("Are You A LinkedIn User? ")
 st.subheader('In a project with the marketing analytics team to analyze social media habits in the US. This is a real-time predictive model based on individual attributes and demographics. This interactive applicatio our marketing team to strategically target platforms and identify key customer segments!', divider='blue')
-educ = st.selectbox("What is Your Education Level?", placeholder= "Choose Your Education Level"
+educ = st.selectbox("What is Your Education Level?", placeholder= "Choose Your Education Level",
               options = ["","less than highschool","High school incomplete","High School Graduate","Some college, no degree","Two year associate degree","Four year college or University","Some postgraduate or professional school"])
 
 if educ == "less than highschool":
