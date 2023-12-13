@@ -6,7 +6,7 @@ import pandas
 
 
 ######### Example 1
-st.title("Are you a LinkedIn user? ")
+st.title("Are You A LinkedIn User? ")
 educ = st.selectbox("Education level", 
               options = ["","less than highschool","High school incomplete","High School Graduate","Some college, no degree","Two year associate degree","Four year college or University","Some postgraduate or professional school"])
 
