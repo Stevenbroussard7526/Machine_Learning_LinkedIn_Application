@@ -6,7 +6,7 @@ import pandas
 
 
 ######### Example 1
-st.title("Are You A LinkedIn User? ")
+st.title("The LinkedIn Application... Are You A LinkedIn User? :eyes: ")
 st.subheader('In a project with the marketing analytics team to analyze social media habits in the US. This is a real-time predictive model based on individual attributes and demographics. This interactive applicatio our marketing team to strategically target platforms and identify key customer segments!', divider='blue')
 educ = st.selectbox("What is Your Education Level?", placeholder= "Choose Your Education Level",
               options = ["","less than highschool","High school incomplete","High School Graduate","Some college, no degree","Two year associate degree","Four year college or University","Some postgraduate or professional school"])
@@ -266,7 +266,7 @@ newdata = pandas.DataFrame({
 #lr.predict(newdata)
 with st.form("key1"):
     # ask for input
-    submit= st.form_submit_button("Click Here to find out if you are LinkedIn user or not! :yum:", use_container_width=True)
+    submit= st.form_submit_button("Click Here to Find Out If You Are LinkedIn User or Not! :yum:", use_container_width=True)
 newdata["prediction"]=lr.predict(newdata.iloc[:, :6].values)
 ynew = lr.predict_proba(newdata.iloc[:, :6].values)
 if submit:
