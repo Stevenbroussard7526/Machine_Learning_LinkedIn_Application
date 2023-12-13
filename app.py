@@ -273,10 +273,10 @@ if submit:
 	ans=lr.predict(newdata.iloc[:, :6].values)
 	if ans==[1]:
 		st.write('The probability that you will use Linkedin is:',round(ynew[0,1],2))
-		st.title("Congratulations!!! :tada: :tada: :tada: You are likely a LinkedIn User!")
+		st.title(":tada: :tada: :tada: Congratulations!!! :tada: :tada: :tada: You are likely a LinkedIn User!")
 	else:
 		st.write('The probability that you will use Linkedin is:',round(ynew[0,1],2))
-		st.title("Sorry...You are likely not a Linkedin user...")
+		st.title("Sorry... :frowning: :frowning: :frowning:You are likely not a Linkedin user...")
 	
     
 
