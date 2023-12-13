@@ -266,7 +266,7 @@ newdata = pandas.DataFrame({
 #lr.predict(newdata)
 with st.form("key1"):
     # ask for input
-    submit= st.form_submit_button("Click to find out if you are LinkedIn user or not!", use_container_width=True)
+    submit= st.form_submit_button("Click to find out if you are LinkedIn user or not! :yum:", use_container_width=True)
 newdata["prediction"]=lr.predict(newdata.iloc[:, :6].values)
 ynew = lr.predict_proba(newdata.iloc[:, :6].values)
 if submit:
@@ -276,7 +276,7 @@ if submit:
 		st.title(":tada: :tada: :tada: Congratulations!!! :tada: :tada: :tada: You are likely a LinkedIn User!")
 	else:
 		st.write('The probability that you will use Linkedin is:',round(ynew[0,1],2))
-		st.title("Sorry... :frowning: :frowning: :frowning:You are likely not a Linkedin user...")
+		st.title("Sorry... :frowning: :frowning: :frowning: You are likely not a Linkedin user...")
 	
     
 
